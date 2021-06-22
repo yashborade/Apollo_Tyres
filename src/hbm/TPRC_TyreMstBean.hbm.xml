@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Mar, 2020 9:59:50 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.TPRC_TyreMstBean" table="TPRC_TYMST">
+    
+    <composite-id>
+     		<key-property name="PLT" column="PLT" type="int"></key-property>
+  			<key-property name="SEC" column="SEC" type="java.lang.String"></key-property>
+  			<key-property name="SIZE" column="SIZE" type="java.lang.String"></key-property>
+  			<key-property name="FGCODE" column="FGCODE" type="java.lang.String"></key-property>    		
+    	</composite-id>
+        <property name="EMPID" type="int">
+            <column name="EMPID" />
+        </property>
+        <property name="SRNO" type="int">
+            <column name="SRNO" />
+        </property>
+        <property name="GTCODE" type="java.lang.String">
+            <column name="GTCODE" />
+        </property>
+        <property name="DT_ENT" type="java.util.Date">
+            <column name="DT_ENT" />
+        </property>
+        <property name="DT_ACT" type="java.util.Date">
+            <column name="DT_ACT" />
+        </property>
+    </class>
+</hibernate-mapping>

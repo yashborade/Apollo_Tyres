@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Mar, 2020 12:24:17 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.CCSS_AddGaugesBean" table="CCSS_GaugeMst">
+        <id name="SRNO" type="int">
+            <column name="SRNO" />
+            <generator class="assigned" />
+        </id>
+        <property name="PLT" type="int">
+            <column name="PLT" />
+        </property>
+        <property name="SEC" type="java.lang.String">
+            <column name="SEC" />
+        </property>
+        <property name="TYRE_CODE" type="java.lang.String">
+            <column name="TYRE_CODE" />
+        </property>
+        <property name="GAUGE_TYPE" type="java.lang.String">
+            <column name="GAUGE_TYPE" />
+        </property>
+        <property name="THREAD" type="double">
+            <column name="THREAD" />
+        </property>
+        <property name="TOTAL" type="double">
+            <column name="TOTAL" />
+        </property>
+        <property name="FLG" type="java.lang.String">
+            <column name="FLG" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+    </class>
+</hibernate-mapping>

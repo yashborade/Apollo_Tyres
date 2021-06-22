@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 Mar, 2020 10:32:09 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.CCSS_AddCureCycleBean" table="CCSS_CureMst">
+    
+    	<composite-id>
+     		<key-property name="PLT" column="PLT" type="int"></key-property>
+  			<key-property name="SEC" column="SEC" type="java.lang.String"></key-property>
+  			<key-property name="REV_NO" column="REV_NO" type="int"></key-property>
+  			<key-property name="PATT_NAM" column="PATT_NAM" type="java.lang.String"></key-property>      		
+    	</composite-id>
+        <property name="SRNO" type="int">
+            <column name="SRNO" />
+        </property>
+        <property name="CONS" type="java.lang.String">
+            <column name="CONS" />
+        </property>
+        <property name="FLG" type="java.lang.String">
+            <column name="FLG" />
+        </property>
+        <property name="TYRE_SIZE" type="java.lang.String">
+            <column name="TYRE_SIZE" />
+        </property>
+        <property name="TYRE_CODE" type="java.lang.String">
+            <column name="TYRE_CODE" />
+        </property>
+        <property name="CURE_CODE" type="java.lang.String">
+            <column name="CURE_CODE" />
+        </property>
+        <property name="THR_CAP" type="java.lang.String">
+            <column name="THR_CAP" />
+        </property>
+        <property name="THR_BASE" type="java.lang.String">
+            <column name="THR_BASE" />
+        </property>
+        <property name="THR_WINGTIP" type="java.lang.String">
+            <column name="THR_WINGTIP" />
+        </property>
+        <property name="GAUGES_CENTRAL" type="java.lang.String">
+            <column name="GAUGES_CENTRAL" />
+        </property>
+        <property name="GAUGES_SHOULDER" type="java.lang.String">
+            <column name="GAUGES_SHOULDER" />
+        </property>
+        <property name="THREAD_CENTRAL" type="double">
+            <column name="THREAD_CENTRAL" />
+        </property>
+        <property name="TOTAL_CENTRAL" type="double">
+            <column name="TOTAL_CENTRAL" />
+        </property>
+        <property name="THREAD_SHOULDER" type="double">
+            <column name="THREAD_SHOULDER" />
+        </property>
+        <property name="TOTAL_SHOULDER" type="double">
+            <column name="TOTAL_SHOULDER" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+    </class>
+</hibernate-mapping>

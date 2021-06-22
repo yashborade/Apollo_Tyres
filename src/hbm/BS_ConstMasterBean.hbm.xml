@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Mar, 2020 9:53:05 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.BS_ConstMasterBean" table="BS_CONSTMASTER">
+
+    	<composite-id>
+     		<key-property name="PLT" column="PLT" type="int"></key-property>
+  			<key-property name="SECTION" column="SECTION" type="java.lang.String"></key-property>
+  			<key-property name="CONST" column="CONST" type="java.lang.String"></key-property>   		
+    	</composite-id>
+        <property name="SRNO" type="int">
+            <column name="SRNO" />
+        </property>
+        <property name="USER_DISP" type="java.lang.String">
+            <column name="USER_DISP" />
+        </property>
+        <property name="UPD_ON" type="java.util.Date">
+            <column name="UPD_ON" />
+        </property>
+        <property name="UPD_BY" type="int">
+            <column name="UPD_BY" />
+        </property>
+        <property name="FIN_YEAR" type="java.lang.String">
+            <column name="FIN_YEAR" />
+        </property>
+    </class>
+</hibernate-mapping>
